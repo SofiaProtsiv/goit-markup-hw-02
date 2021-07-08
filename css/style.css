@@ -1,12 +1,124 @@
-:root{
-    --primary-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #2196F3;
-    --bg-color: #2F303A;
-    --e-address: rgba(255, 255, 255, 0.6);
-    --address:#FFFFFF;
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --bg-color: #2f303a;
+  --e-address: rgba(255, 255, 255, 0.6);
+  --address: #ffffff;
+  --button-two: #f5f4fa;
 }
 
-body{
-    background-color: #FFFFFF;
+ul {
+  list-style: none;
 }
+
+body {
+  background-color: #ffffff;
+}
+
+/* INDEX.HTML */
+
+/* logo */
+
+.logo-style {
+  color: var(--accent-color);
+}
+.logo a {
+  color: var(--primary-text-color);
+}
+
+.logo a:focus,
+.logo a:hover {
+  color: var(--accent-color);
+}
+
+/* header */
+.logo {
+  color: var(--primary-text-color);
+}
+
+/* nav */
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* main */
+
+.hero-title {
+  color: var(--address);
+}
+
+/* section */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+.section-title h3 {
+  color: var(--title-text-color);
+}
+
+/* features */
+
+.features .title {
+  color: var(--primary-text-color);
+}
+
+.features .text {
+  color: var(--title-text-color);
+}
+
+/* team */
+
+.team .title {
+  color: var(--primary-text-color);
+}
+
+.team .text {
+  color: var(--title-text-color);
+}
+
+/* button  */
+
+.button.primary {
+  color: var(--address);
+  background-color: var(--accent-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--accent-color);
+  background-color: var(--address);
+}
+
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--button-two);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--address);
+  background-color: var(--accent-color);
+}
+
+/* PORTFOLIO.HTML */
+
+/* main */
