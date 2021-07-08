@@ -1,0 +1,12 @@
+:root{
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --bg-color: #2F303A;
+    --e-address: rgba(255, 255, 255, 0.6);
+    --address:#FFFFFF;
+}
+
+body{
+    background-color: #FFFFFF;
+}
