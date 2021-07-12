@@ -9,70 +9,72 @@
 }
 
 body {
-  background-color: rgb(238, 238, 238);
-  color: var(
-    --primary-text-color
-  ); /* из всех элементов где я раньше присвоила цвет color = var (- primary-text-color) я его удалила и хотела поместить этот цвет в body
-  НО при попытке в body добавить color = var (- primary-text-color), 
-  все элементы, которым я раньше присваивала color = var (- primary-text-color) становилось фиолетовым. 
-  В чем проблема? */
+  background-color: var(--address);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.14;
 }
 
+a {
+  text-decoration: none;
+}
 .list {
   list-style: none;
 }
 
 /* INDEX.HTML */
 
+.hero {
+  background-color: var(--bg-color);
+}
+
 /* logo */
 
 .logo-style {
   color: var(--accent-color);
 }
-.logo {
+.secondary-logo {
+  color: var(--address);
+}
+.nav-logo {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
 
-.logo:focus,
-.logo:hover {
+.nav-logo:focus,
+.nav-logo:hover {
   color: var(--accent-color);
 }
 
 /* nav */
-.site-nav .link {
+.site-nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.auth-nav .link {
+.auth-nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav-link:hover,
+.auth-nav-link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 /* main */
@@ -83,13 +85,11 @@ body {
   font-size: 44px;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 /* section */
 
 .section-title {
-  color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -97,12 +97,11 @@ body {
 
 /* features */
 
-.features .title {
-  color: var(--primary-text-color);
+.features-title {
   text-transform: uppercase;
 }
 
-.features .text {
+.features-text {
   color: var(--title-text-color);
   font-weight: 400;
   line-height: 1.7;
@@ -110,13 +109,12 @@ body {
 
 /* team */
 
-.team .title {
-  color: var(--primary-text-color);
+.team-title {
   font-weight: 500;
   font-size: 16px;
 }
 
-.team .text {
+.team-text {
   color: var(--title-text-color);
   font-weight: normal;
   font-size: 16px;
@@ -131,7 +129,6 @@ body {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -147,7 +144,7 @@ body {
 }
 
 .button.secondary {
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
   background-color: var(--button-two);
 }
 
@@ -158,32 +155,37 @@ body {
 }
 
 /* footer */
-
-.address .text,
-.address .link {
+.footer {
+  background-color: var(--bg-color);
+}
+.address-text,
+.address-link {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
 
-.address .link {
+.address-text {
+  color: var(--address);
+}
+
+.address-link {
   color: var(--e-address);
   font-style: normal;
-  text-decoration: none;
 }
 
 /* PORTFOLIO.HTML */
 
 /* main */
 
-/* grid */
-.grid h3 {
+/* cardset */
+.cardset-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.grid P {
+.cardset-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
